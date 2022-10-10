@@ -84,10 +84,6 @@ public class Silly implements Comparable<Silly>{
      *       Make sure you document this method!
      */
 
-
-
-
-
     public static void main(String[] args) {
         /**
          * Task 1 (continued): The below demonstrates how each of the Silly
@@ -153,17 +149,17 @@ public class Silly implements Comparable<Silly>{
      * @return    whether o is a Silly object with the same name as this.
      */
     @Override
-    public boolean equals(Object obj) {
+    public boolean equals(Object o) {
         /**
          * TODO (Task 4): Complete the body of this method!
          *                We've started it by checking the type of o for you.
          *                You just need to return true if the names are equal.
          */
-        if (!(obj instanceof Silly)){
+        if (!(o instanceof Silly)){
             return false;
         }
 
-        Silly other = (Silly) obj; // To access .name of o, we need to cast it.
+        Silly other = (Silly) o; // To access .name of o, we need to cast it.
 
         return this.name.equals(other.name);
 
