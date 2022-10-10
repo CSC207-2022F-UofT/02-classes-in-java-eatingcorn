@@ -153,17 +153,17 @@ public class Silly implements Comparable<Silly>{
      * @return    whether o is a Silly object with the same name as this.
      */
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object obj) {
         /**
          * TODO (Task 4): Complete the body of this method!
          *                We've started it by checking the type of o for you.
          *                You just need to return true if the names are equal.
          */
-        if (!(o instanceof Silly)){
+        if (!(obj instanceof Silly)){
             return false;
         }
 
-        Silly other = (Silly) o; // To access .name of o, we need to cast it.
+        Silly other = (Silly) obj; // To access .name of o, we need to cast it.
 
         return this.name.equals(other.name);
 
